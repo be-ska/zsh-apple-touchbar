@@ -8,29 +8,20 @@ views:
       text: 👨🏻‍💻 code
       command: cd ~/code
     3:
-      text: 🤖 ap
+      text: 🚁 ap
       command: cd ~/code/ardupilot
     4:
       text: 🚜 ap-rov
       command: cd ~/code/ardupilot-rover
     5:
-      text: second view
-      view: second
+      text: 🤖 ap-sim
+      command: Tools/autotest/sim_vehicle.py -v Copter --console --map
     6:
-      text: third view
-      view: third
-  second:
-    1:
-      text: 👈 back
-      view: first
-    2:
-      text: current path
+      text: ✈️ proxy
+      command: cd ~/code/Lua-script-Align && mavproxy.py --master=/dev/tty.usbmodem14101 --baudrate=115200 --console
+    7:
+      text: 📂 path
       command: pwd
-    back: first
-  third:
-    1:
-      text: 👈 back
-      view: first
-    2:
-      text: ls
-      command: ls -la
+    8:
+      text: 🦚 VSC
+      command: code .
