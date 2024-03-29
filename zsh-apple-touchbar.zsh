@@ -7,9 +7,12 @@ function first_view() {
 
 	set_state 'first'
 
-	create_key 1 '👉 pwd' 'pwd |tr -d "\\n" |pbcopy' '-s'
-	create_key 2 'second view' 'second_view'
-	create_key 3 'third view' 'third_view'
+	create_key 1 '🔌 usb' 'ls /dev | grep tty.usb' '-s'
+	create_key 2 '👨🏻‍💻 code' 'cd ~/code' '-s'
+	create_key 3 '🤖 ap' 'cd ~/code/ardupilot' '-s'
+	create_key 4 '🚜 ap-rov' 'cd ~/code/ardupilot-rover' '-s'
+	create_key 5 'second view' 'second_view'
+	create_key 6 'third view' 'third_view'
 }
 
 function second_view() {

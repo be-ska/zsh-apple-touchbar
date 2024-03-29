@@ -2,12 +2,21 @@ default_view: first
 views:
   first:
     1:
-      text: 👉 pwd
-      command: pwd |tr -d "\\n" |pbcopy
+      text: 🔌 usb
+      command: ls /dev | grep tty.usb
     2:
+      text: 👨🏻‍💻 code
+      command: cd ~/code
+    3:
+      text: 🤖 ap
+      command: cd ~/code/ardupilot
+    4:
+      text: 🚜 ap-rov
+      command: cd ~/code/ardupilot-rover
+    5:
       text: second view
       view: second
-    3:
+    6:
       text: third view
       view: third
   second:
